@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" style="width: 100%">
+    <!-- Indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/Content/Images/dash1.jpg" alt="...">
+            <div class="carousel-caption">
+                <span>Never Stop</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Content/Images/dash2.jpg" alt="...">
+            <div class="carousel-caption">
+                <span>We Learn!</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Content/Images/dash3.jpg" alt="...">
+            <div class="carousel-caption">
+                <span>Win</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Courses</h2>
+        <p>
+            Use this option to view all course and offerings at this institution.
+        </p>
+        <p>@Html.ActionLink("Learn More", "Index", "Courses", new { @class="btn btn-primary"})</p>
+    </div>
+    <div class="col-md-6">
+        <h2>Students</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p>@Html.ActionLink("Learn More", "Index", "Students", new { @class = "btn btn-info" })</p>
+    </div>
+</div>
